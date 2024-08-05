@@ -1,0 +1,52 @@
+
+.navbar {
+  background-color: black; /* Set the background color */
+  padding: 16px; /* Add some padding */
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+* {
+  color: white;
+}
+
+#search-bar {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+}
+
+#search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 8px;
+}
+
+
+#search-button {
+  padding: 8px 16px;
+  background-color: white;
+  margin-right: 8px;
+}
+
+#search-button {
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+

@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+
+<div id="prod-container">
+  @for (prod of this.StoreService.products; track $index) {
+    <app-product-card [product]="prod"></app-product-card>
+  }
+</div>
+
+<div>
+  @for (item of this.StoreService.cart; track $index) {
+    <p>{{ item.name }}</p>
+    <p>Price: {{ item.price }} VND</p>
+    <p>Quantity: {{ item.quantity }}</p>
+  }
+  <app-total-money></app-total-money>
+</div>

@@ -1,0 +1,40 @@
+<div id="product-container">
+  <div class="product-card">
+    <p>{{ this.product.name }}</p>
+    <img src="{{ this.product.imageUrl }}" alt="product image" />
+    <p>{{ this.product.description }}</p>
+    <p>giá: {{ this.product.price }} VND</p>
+    <button
+      class="StoreService.card-button"
+      (click)="
+        this.storeService.addToCart({
+          id: this.product.id,
+          name: this.product.name,
+          price: this.product.price,
+          quantity: 1,
+        })
+      "
+    >
+      Thêm
+    </button>
+    <button
+      class="StoreService.card-button"
+      (click)="
+        this.storeService.removeFromCart({
+          id: this.product.id,
+          name: this.product.name,
+          price: this.product.price,
+          quantity: 1,
+        })
+      "
+    >
+      Xóa
+    </button>
+    <button
+      class="StoreService.card-button"
+      (click)="this.storeService.clearCart()"
+    >
+      Bỏ toàn bộ
+    </button>
+  </div>
+</div>
